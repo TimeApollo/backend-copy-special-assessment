@@ -7,7 +7,7 @@
 # http://code.google.com/edu/languages/google-python-class/
 
 
-"""
+"""Finding special files in directory.
 Assignment: CopySpecial
 
 Description: program that takes in a directory to find special files.
@@ -49,15 +49,18 @@ def zip_to(paths, zippath):
 
 def copy_to(paths, dir):
     """given list of paths, copies files into given directory"""
+    if not os.path.exists(dir):
+        os.makedirs(dir)
     for path in paths:
-        shutil.copy(path, dir)
+        if os.path.exists:
+            shutil.copy(path, dir)
 
 
 def get_special_paths(dir):
     """returns list of ablsolute paths of special files in given directory"""
     return [shutil.abspath(file)
             for file in os.listdir(dir)
-            if re.search(r'\_\_\w+\_\_', file)]
+            if re.search(r'__\w+__', file)]
 
 
 # +++your code here+++

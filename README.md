@@ -63,3 +63,12 @@ If the child process exits with an error code, exit with an error code and print
 4. Commit your changes, then git push the branch back to your own github account.
 5. From your own Github repo, create a pull request (PR) from your dev branch back to your own master.
 6. Copy/Paste the URL link to your PR as your assignment submission.
+
+
+
+
+It is the idea that python is ready to go out of the box since it has a standard library of modules. you dont have to reinvent the wheel everytime and can instead reach for a module that is already included that most likely does what you need.
+
+Don't Repeat Yourself
+
+Local Enclosing Global Built-in
